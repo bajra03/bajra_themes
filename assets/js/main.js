@@ -15,31 +15,16 @@ $(document).ready(function(){
   });
 
   // Portfolio Section
-  var $container = $('.portfolio-container');
+  $('.more-portfolio').slice(0, 3).show();
 
-  $container.isotope({
-    filter: '*',
-    animationOptions: {
-      duration: 700,
-      easing: 'linear',
-      queue: false
+  $('#load-more').on('click', function(e){
+    e.preventDefault();
+
+    $('.more-portfolio:hidden').slice(0, 3).slideDown();
+        
+    if($('.more-portfolio:hidden').length == 0){
+      $('#load-more').fadeOut('slow');
     }
-  });
-
-  $('.filter-option button').click(function(){
-    $('.filter-option .active').removeClass('active');
-    $(this).addClass('active');
-
-    var selector = $(this).attr('data-filter');
-    $container.isotope({
-      filter: selector,
-      animationOptions: {
-        duration: 700,
-        easing: 'liniear',
-        queue: false
-      }
-    });
-    return false;
   });
 });
 

@@ -9,7 +9,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #232741;
 }
 .secondary-color {
-  /* background-color: #666B8D; */
   background-color: #1a1d30;
 }
 body, html {
@@ -181,31 +180,6 @@ section#section-portfolio {
   background-position: top left;
   background-repeat: no-repeat;
 }
-.btn-group.filter-option {
-  margin-top: 20px;
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-.filter-btn {
-  border: none;
-  outline: none;
-  color: #fff;
-  width: 110px;
-  padding: 4px 10px;
-  background-color: rgba(112,138,255,0.5);
-  margin-top: 5px;
-  margin-right: 5px;
-}
-.active {
-  background-color: #232741;
-}
-.filter-btn:hover {
-  background-color: #232741;
-  transition: .1s ease-in;
-}
-.row.portfolio-container {
-  margin-top: 20px;
-}
 .portfolio-item .card img {
   max-width: 313px;
   width: 100%;
@@ -235,6 +209,25 @@ section#section-portfolio {
   border: unset;
   border-radius: unset;
 }
+.portfolio-container .more-portfolio {
+  display: none;
+}
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.more-portfolio {
+  margin: 10px 0;
+}
+div#load-more {
+  margin-top: 30px;
+}
+#load-more .btn {
+  border-radius: unset;
+}
+#load-more .btn-primary {
+  border-color: #1a1d30;
+}
+#load-more .btn-primary:hover {
+  background-color: #232741;
+} 
+
 
 /* Back to top button */
 a#topButton {

@@ -1,5 +1,5 @@
 <?php 
-$lokasi =  get_template_directory_uri();
+$portfolios =  get_sub_field('portfolios');
 // print_r ($lokasi);
 ?>
 <!-- Section Portfolio -->
@@ -9,95 +9,48 @@ $lokasi =  get_template_directory_uri();
       <h1>Portfolio</h1>
     </div>
     <div class="inner-content">
-      <h4>My Works</h4>
-      <div class="row">
-        <div class="col-md-12">
-          <div id="filter-option" class="btn-group filter-option">
-            <button class="filter-btn active" data-filter="*">All</button>
-            <button class="filter-btn" data-filter=".realestate">Realestate</button>
-            <button class="filter-btn" data-filter=".company">Company</button>
-            <button class="filter-btn" data-filter=".single-page">Single Page</button>
-          </div>
-        </div>
-      </div>
       <div class="row portfolio-container">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filter realestate">
-          <a href="#" data-toggle="modal" data-target="#portfolioModal">
-            <div class="portfolio-item">
-              <div class="card">
-                <img src="<?php $lokasi ?>/assets/images/portfolio-img.png" class="card-img-top" alt="Portfolio">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filter company">
-          <a href="#" data-toggle="modal" data-target="#portfolioModal">
-            <div class="portfolio-item">
-              <div class="card" >
-                <img src="./assets/img/portfolio-img.png" class="card-img-top img-fluid" alt="Portfolio">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filter single-page company">
-          <a href="#" data-toggle="modal" data-target="#portfolioModal">
-            <div class="portfolio-item">
-              <div class="card">
-                <img src="./assets/img/portfolio-img.png" class="card-img-top img-fluid" alt="Portfolio">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filter realestate">
-            <a href="#" data-toggle="modal" data-target="#portfolioModal">
+
+        <?php foreach ($portfolios as $key=>$portfolio) {?>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 more-portfolio">
+            <a href="#" data-toggle="modal" data-target="#portfolio-modal-<?php echo $key ?>">
               <div class="portfolio-item">
-                <div class="card" >
-                  <img src="./assets/img/portfolio-img.png" class="card-img-top img-fluid" alt="Portfolio">
+                <div class="card">
+                  <img src="<?php echo $portfolio['portfolio_image'] ?>" class="card-img-top" alt="Portfolio">
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filter company">
-            <a href="#" data-toggle="modal" data-target="#portfolioModal">
-              <div class="portfolio-item">
-                <div class="card" >
-                  <img src="./assets/img/portfolio-img.png" class="card-img-top img-fluid" alt="Portfolio">
+            
+            <!-- Portfolio Modal -->
+            <div class="modal fade" id="portfolio-modal-<?php echo $key ?>" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="modal-title" id="portfolioModalLabel">
+                      <h3><?php echo $portfolio['portfolio_title']?></h3>
+                    </div>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="<?php echo $portfolio['portfolio_image']?>" alt="Portfolio item" class="img-fluid">
+                    <p><?php echo $portfolio['portfolio_description']?></p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="<?php echo $portfolio['portfolio_link']?>" class="btn secondary-color text-white">View</a>
+                  </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filter single-page company">
-            <a href="#" data-toggle="modal" data-target="#portfolioModal">
-              <div class="portfolio-item">
-                <div class="card" >
-                  <img src="./assets/img/portfolio-img.png" class="card-img-top img-fluid" alt="Portfolio">
-                </div>
-              </div>
-            </a>
-          </div>
+        <?php } ?>
+
       </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal -->
-  <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="modal-title" id="portfolioModalLabel">
-            <h3>Portfolio Title</h3>
-          </div>
-          <button class="close" type="button" data-dismiss="modal" aria-label="close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+
+      <div id="load-more" class="load-more-wrapper text-center">
+          <a href="#" class="btn btn-primary secondary-color">Load More</a>
         </div>
-        <div class="modal-body text-center">
-          <img src="./assets/img/portfolio-img.png" alt="Portfolio item" class="img-fluid">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates maiores laudantium possimus pariatur ipsa, neque perferendis quidem nisi ab nostrum id similique quibusdam eligendi incidunt consectetur minus. Pariatur, rerum!</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#" class="btn secondary-color text-white">View</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
