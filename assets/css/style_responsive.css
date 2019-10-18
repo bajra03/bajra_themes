@@ -1,0 +1,60 @@
+/* Responsive Styling */
+@media screen and (min-width: 320px) 
+and (max-width: 480px) {
+  /* Header Mobile */
+  section#section-header {
+    height: auto !important;
+  }
+  .container.p-3.profile-box {
+    width: 95%;
+  }
+  .img-profile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .profile-detail h1,
+  .profile-detail h4 {
+    text-align: center;
+  }
+  .profile-detail h1 {
+    font-size: 32px;
+  }
+  .profile-detail h4 {
+    font-size: 24px;
+  }
+  .profile-detail p {
+    text-align: justify;
+  }
+  .social-wrapper {
+    text-align: center;
+  }
+  .social-wrapper ul li a {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 24px;
+  }
+
+  /* Resume Mobile */
+  .container.content-box {
+    width: 95%;
+  }
+  .content-header h1 {
+    font-size: 32px;
+  }
+
+  /* Portfolio Mobile */
+  .portfolio-item .card img {
+    max-width: unset;
+  }
+}
+
+@media screen and (min-width: 481px)
+and (max-width: 768px) {
+  .container.p-3.profile-box {
+    width: 95%;
+  }
+  .container.content-box {
+    width: 95%;
+  }
+}
