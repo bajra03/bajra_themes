@@ -22,7 +22,11 @@
               <div class="resume-timeline">
                 <div class="timeline-item">
                   <h4 class="item-title"><?php echo $experience['experience_company_name'] ?></h4>
-                  <span class="item-period"><?php echo $experience['experience_date_from'] ?> - <?php echo $experience['experience_date_until']?></span>
+                  <span class="item-period"><?php echo $experience['experience_date_from'] ?> - <?php if($experience['present'] == true){
+                    echo "Present";
+                  }else{
+                    echo $experience['experience_date_until'];
+                  }?></span>
                   <span class="item-profision"><?php echo $experience['experience_title']?></span>
                   <p class="item-desc"><?php echo $experience['experience_detail']?></p>
                 </div>
@@ -39,7 +43,11 @@
               <div class="resume-timeline">
                 <div class="timeline-item">
                   <h4 class="item-title"><?php echo $education['education_school_name']?></h4>
-                  <span class="item-period"><?php echo $education['education_date_from']?> - <?php echo $education['education_date_until']?></span>
+                  <span class="item-period"><?php echo $education['education_date_from']?> - <?php if($education['present'] == true){
+                    echo "Present";
+                  }else{
+                    echo $education['education_date_until'];
+                  }?></span>
                   <span class="item-profision"><?php echo $education['education_majors']?></span>
                   <p class="item-desc"><?php echo $education['education_detail']?></p>
                 </div>
