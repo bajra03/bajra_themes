@@ -190,10 +190,12 @@ section#section-portfolio {
 }
 .modal-body img {
   width: 100%;
+  padding: 0;
 }
 .modal-body p {
   text-align: justify;
   margin-top: 20px;
+  padding: 0 1rem;
 }
 .portfolio-container .filter {
   margin-bottom: 15px;
