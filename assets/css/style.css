@@ -188,6 +188,9 @@ section#section-portfolio {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.modal-body {
+  padding: 0;
+}
 .modal-body img {
   width: 100%;
   padding: 0;
