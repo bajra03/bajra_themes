@@ -6,7 +6,7 @@
         wp_enqueue_style('style', $dir. '/assets/css/style.css', array(), '', 'screen');
         wp_enqueue_style('style-responsive', $dir. '/assets/css/style_responsive.css', array(), '', 'screen');
         wp_enqueue_style('fontawesome', $dir. '/assets/vendor/fontawesome/css/all.min.css', array(), '', 'screen');
-        wp_enqueue_style('aos', $dir. '/assets/vendor/fontawesome/css/aos.css', array(), '', 'screen');
+        wp_enqueue_style('aos', $dir. '/assets/css/aos.css', array(), '', 'screen');
 
         wp_enqueue_script('jquery-3.4.1', $dir. '/assets/js/jquery-3.4.1.min.js', array('jquery'), false, true);
         wp_enqueue_script('isotop', $dir. '/assets/js/isotope.pkgd.min.js', array('jquery'), false, true);
