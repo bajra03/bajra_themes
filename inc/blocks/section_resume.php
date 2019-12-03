@@ -2,12 +2,14 @@
  
   $experiences = get_sub_field('experiences');
   $educations = get_sub_field('educations');
+  $enterance_effect = get_sub_field('enterance_effect');
+  $enterance_delay = get_sub_field('enterance_delay');
  
  ?>
 
  <!-- Section Resume -->
  <section id="section-resume" class="primary-color">
-    <div data-aos="zoom-in-up" data-aos-delay="500" class="container content-box bg-white">
+    <div data-aos="<?php echo $enterance_effect ?>" data-aos-delay="<?php echo $enterance_delay ?>" class="container content-box bg-white">
       <div class="content-header text-center secondary-color">
         <h1>Resume</h1>
       </div>

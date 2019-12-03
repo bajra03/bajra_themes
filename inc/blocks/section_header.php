@@ -8,6 +8,8 @@
   $profile_facebook = get_sub_field('profile_facebook');
   $profile_skype = get_sub_field('profile_skype');
   $profile_linkedin = get_sub_field('profile_linkedin');
+  $enterance_effect = get_sub_field('enterance_effect');
+  $enterance_delay = get_sub_field('enterance_delay');
 
 
 
@@ -16,7 +18,7 @@
 
 <!-- Section Header -->
 <section id="section-header" class="primary-color h-100">
-  <div data-aos="zoom-in-up" data-aos-delay="100" class="container p-3 profile-box">
+  <div data-aos="<?php echo $enterance_effect ?>" data-aos-delay="<?php echo $enterance_delay ?>" class="container p-3 profile-box">
     <div class="row justify-content-center align-items-center">
       <div class="col-sm-5">
         <div class="img-profile">
