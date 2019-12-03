@@ -7,7 +7,7 @@
 
  <!-- Section Resume -->
  <section id="section-resume" class="primary-color">
-    <div data-aos="zoom-in-up" class="container content-box bg-white">
+    <div data-aos="zoom-in-up" data-aos-delay="500" class="container content-box bg-white">
       <div class="content-header text-center secondary-color">
         <h1>Resume</h1>
       </div>
