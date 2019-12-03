@@ -16,7 +16,7 @@
 
 <!-- Section Header -->
 <section id="section-header" class="primary-color h-100">
-  <div class="container p-3 profile-box">
+  <div data-aos="zoom-in-up" class="container p-3 profile-box">
     <div class="row justify-content-center align-items-center">
       <div class="col-sm-5">
         <div class="img-profile">

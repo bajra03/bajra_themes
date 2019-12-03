@@ -1,4 +1,6 @@
 
+AOS.init();
+
 $(document).ready(function(){
   // Smooth scroll
   $("a").on('click', function(event){

@@ -4,7 +4,7 @@ $portfolios =  get_sub_field('portfolios');
 ?>
 <!-- Section Portfolio -->
 <section id="section-portfolio" class="primary-color">
-  <div class="container content-box bg-white">
+  <div data-aos="zoom-in-up" class="container content-box bg-white">
     <div class="content-header text-center secondary-color">
       <h1>Portfolio</h1>
     </div>
