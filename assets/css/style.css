@@ -252,6 +252,10 @@ div#load-more {
   text-transform: capitalize;
 }
 
+.portfolio-desc p {
+  margin-top: 10px;
+}
+
 
 /* Back to top button */
 a#topButton {
