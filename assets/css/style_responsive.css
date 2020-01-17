@@ -47,8 +47,14 @@ and (max-width: 480px) {
   .portfolio-item .card img {
     max-width: unset;
   }
+  .portfolio-img{
+    max-width: unset;
+  }
   .portfolio-img img{
     width: 100%;
+  }
+  .portfolio-title h4{
+    margin-top: 10px;
   }
 }
 

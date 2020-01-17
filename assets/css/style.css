@@ -242,6 +242,7 @@ section#section-portfolio .inner-section-portfolio{
 }
 .portfolio-title h4 {
   text-transform: capitalize;
+  font-weight: 600;
 }
 .portfolio-desc p {
   margin-top: 10px;
