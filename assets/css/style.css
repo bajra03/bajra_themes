@@ -176,11 +176,9 @@ section#section-portfolio {
   background-position: top left;
   background-repeat: no-repeat;
 }
-
 section#section-portfolio .inner-section-portfolio{
   padding-bottom: 30px;
 }
-
 .portfolio-item .card img {
   max-width: 313px;
   width: 100%;
@@ -221,9 +219,6 @@ section#section-portfolio .inner-section-portfolio{
 .col-xs-12.col-sm-6.col-md-4.col-lg-4.more-portfolio {
   margin: 10px 0;
 }
-div#load-more {
-  margin-top: 30px;
-}
 .btn {
   border-radius: unset;
 }
@@ -233,29 +228,24 @@ div#load-more {
 .btn-primary:hover {
   background-color: #232741;
   border-color: #232741;
-} 
-
+}
 .portfolio-img {
   text-align: center;
   max-width: 280px;
   height: 200px;
 }
-
 .portfolio-inner-img {
   height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .portfolio-title h4 {
   text-transform: capitalize;
 }
-
 .portfolio-desc p {
   margin-top: 10px;
 }
-
 
 /* Back to top button */
 a#topButton {
