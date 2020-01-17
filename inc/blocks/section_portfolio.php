@@ -6,7 +6,7 @@
 
 <!-- Section Portfolio -->
 <section id="section-portfolio" class="primary-color">
-  <div data-aos="<?php echo $enterance_effect ?>" data-aos-delay="<?php echo $enterance_delay ?>" class="container content-box bg-white">
+  <div data-aos="<?php echo $enterance_effect ?>" data-aos-delay="<?php echo $enterance_delay ?>" class="container content-box bg-white inner-section-portfolio">
     <!-- Title Section -->
     <div class="content-header text-center secondary-color">
       <h1>Portfolio</h1>

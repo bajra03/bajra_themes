@@ -176,6 +176,11 @@ section#section-portfolio {
   background-position: top left;
   background-repeat: no-repeat;
 }
+
+section#section-portfolio .inner-section-portfolio{
+  padding-bottom: 30px;
+}
+
 .portfolio-item .card img {
   max-width: 313px;
   width: 100%;
@@ -219,14 +224,15 @@ section#section-portfolio {
 div#load-more {
   margin-top: 30px;
 }
-#load-more .btn {
+.btn {
   border-radius: unset;
 }
-#load-more .btn-primary {
+.btn-primary {
   border-color: #1a1d30;
 }
-#load-more .btn-primary:hover {
+.btn-primary:hover {
   background-color: #232741;
+  border-color: #232741;
 } 
 
 .portfolio-img {
