@@ -39,13 +39,13 @@
             </div>
           </div>
         </div>       
-        
-      </div>
-      <div id="load-more" class="load-more-wrapper text-center">
-        <a href="#" class="btn btn-primary secondary-color">Load More</a>
-      </div>
+      </div>      
     </div>
 
     <?php } ?>
+
+    <div id="load-more" class="load-more-wrapper text-center">
+      <a href="#" class="btn btn-primary secondary-color">Load More</a>
+    </div>
   </div>
 </section>
