@@ -33,7 +33,7 @@
                   <p><?php echo $portfolio['portfolio_description']?></p>
                 </div>
                 <div class="portfolio-footer">
-                  <a href="<?php echo $portfolio['portfolio_link']?>" class="btn btn-primary secondary-color">Visit</a>
+                  <a href="<?php echo $portfolio['portfolio_link']?>" class="btn btn-primary secondary-color" target="_blank">Visit</a>
                 </div>
               </div>          
             </div>
