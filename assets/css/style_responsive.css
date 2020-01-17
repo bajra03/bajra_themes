@@ -47,6 +47,9 @@ and (max-width: 480px) {
   .portfolio-item .card img {
     max-width: unset;
   }
+  .portfolio-img img{
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 481px)

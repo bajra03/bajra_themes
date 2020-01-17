@@ -1,5 +1,4 @@
 <?php
-
   $profile_image = get_sub_field('profile_image');
   $profile_name = get_sub_field('profile_name');
   $profile_title = get_sub_field('profile_title');
@@ -10,10 +9,6 @@
   $profile_linkedin = get_sub_field('profile_linkedin');
   $enterance_effect = get_sub_field('enterance_effect');
   $enterance_delay = get_sub_field('enterance_delay');
-
-
-
-
 ?>
 
 <!-- Section Header -->

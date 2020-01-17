@@ -50,10 +50,6 @@ section#section-header {
 .container.p-3.profile-box {
   max-width: 940px !important;
   width: 100%;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   align-self: center;
   background-color: #fff;
   z-index: 999;
@@ -232,6 +228,23 @@ div#load-more {
 #load-more .btn-primary:hover {
   background-color: #232741;
 } 
+
+.portfolio-img {
+  text-align: center;
+  max-width: 280px;
+  height: 200px;
+}
+
+.portfolio-inner-img {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portfolio-title h4 {
+  text-transform: capitalize;
+}
 
 
 /* Back to top button */
