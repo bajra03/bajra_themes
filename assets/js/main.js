@@ -22,7 +22,7 @@ $(document).ready(function(){
   $('#load-more').on('click', function(e){
     e.preventDefault();
 
-    $('.more-portfolio:hidden').slice(0, 3).slideDown();
+    $('.more-portfolio:hidden').slice(0, 1).slideDown();
         
     if($('.more-portfolio:hidden').length == 0){
       $('#load-more').fadeOut('slow');
