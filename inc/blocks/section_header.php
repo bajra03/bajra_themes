@@ -15,7 +15,7 @@
 <!-- Section Header -->
 <section id="section-header" class="primary-color h-100">
   <div data-aos="<?php echo $enterance_effect ?>" data-aos-delay="<?php echo $enterance_delay ?>" class="container p-3 profile-box">
-    <div class="row justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-top">
       <div class="col-sm-5">
         <div class="img-profile">
           <img src="<?php echo $profile_image?>" alt="Profile Picture" class="img-fluid">
