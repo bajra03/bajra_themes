@@ -4,7 +4,7 @@
         // $ver = filemtime( get_template_directory() . '/assets/css/main.css' ) . '';
         wp_enqueue_style('bootstrap', $dir. '/assets/css/bootstrap.min.css', array(), '', 'screen');
         wp_enqueue_style('style', $dir. '/assets/css/style.css', array(), '1.2', 'screen');
-        wp_enqueue_style('style-responsive', $dir. '/assets/css/style_responsive.css', array(), '1.2', 'screen');
+        wp_enqueue_style('style-responsive', $dir. '/assets/css/style_responsive.css', array(), '1.3', 'screen');
         wp_enqueue_style('fontawesome', $dir. '/assets/vendor/fontawesome/css/all.min.css', array(), '', 'screen');
         wp_enqueue_style('aos', $dir. '/assets/css/aos.css', array(), '', 'screen');
 

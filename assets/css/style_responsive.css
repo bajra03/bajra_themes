@@ -24,6 +24,7 @@ and (max-width: 480px) {
   }
   .profile-detail p {
     text-align: justify;
+    text-align-last: center;
   }
   .social-wrapper {
     text-align: center;
