@@ -22,6 +22,8 @@ $(document).ready(function(){
   // Hide load more if there is no items
   if($('.more-portfolio:hidden').length === 0){
     $('#load-more').hide()
+  }else{
+    $('#load-more').show()
   }
 
   // Hide load more when no items loaded
