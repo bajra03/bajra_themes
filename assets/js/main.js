@@ -19,6 +19,12 @@ $(document).ready(function(){
   // Portfolio Section
   $('.more-portfolio').slice(0, 3).show();
 
+  // Hide load more if there is no items
+  if($('.more-portfolio:hidden').length === 0){
+    $('#load-more').hide()
+  }
+
+  // Hide load more when no items loaded
   $('#load-more').on('click', function(e){
     e.preventDefault();
 
