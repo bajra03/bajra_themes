@@ -96,6 +96,18 @@ canvas.particles-js-canvas-el {
   margin-bottom: 16px;
 }
 
+.skill-wrapper ul {
+  list-style: none;
+  padding-left: unset;
+}
+
+.skill-wrapper ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+
 /* Resume Section */
 section#section-resume {
   background-image: url(../images/uranus.png);

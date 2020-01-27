@@ -9,6 +9,7 @@
   $profile_linkedin = get_sub_field('profile_linkedin');
   $enterance_effect = get_sub_field('enterance_effect');
   $enterance_delay = get_sub_field('enterance_delay');
+  $skills = get_sub_field('skills');
 ?>
 
 <!-- Section Header -->
@@ -32,6 +33,14 @@
             <li><a href="<?php echo $profile_facebook?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="skype:<?php echo $profile_skype?>?call" title="Skype me"><i class="fab fa-skype"></i></a></li>
             <li><a href="<?php echo $profile_linkedin?>" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+        <div class="skill-wrapper">
+          <h4>Skill</h4>
+          <ul>
+            <?php foreach($skills as $key=>$skill){?>
+              <li><span class="badge badge-pill" style="background-color: <?php echo $skill['skill_bg_color']?>; color: <?php echo $skill['skill_text_color']?>;"><?php echo $skill['skill_name']?></span></li>
+            <?php }?>
           </ul>
         </div>
       </div>

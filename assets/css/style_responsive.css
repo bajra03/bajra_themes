@@ -34,6 +34,9 @@ and (max-width: 480px) {
     height: 30px;
     line-height: 24px;
   }
+  .skill-wrapper ul {
+    text-align: center;
+  }
 
   /* Resume Mobile */
   .container.content-box {
