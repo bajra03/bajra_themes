@@ -1,6 +1,6 @@
 <?php
 /**
- * Elementor Page Template
+ * Template Name: Page With Elementor
  */
 
   get_header();
